@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from scipy.signal import resample
 from brainflow.board_shim import BoardShim, BrainFlowInputParams, BoardIds
 from brainflow.data_filter import DataFilter, FilterTypes, DetrendOperations
-from inference import EEGInferenceApp
+from ai.inference import EEGInferenceApp
 from bluetoothcar import BluetoothCar
 
 class DataProcessor:
