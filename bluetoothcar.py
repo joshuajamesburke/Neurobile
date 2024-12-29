@@ -8,7 +8,6 @@ from bleak import BleakClient
 from scipy.signal import resample
 from brainflow.board_shim import BoardShim, BrainFlowInputParams, LogLevels, BoardIds
 from brainflow.data_filter import DataFilter, DetrendOperations, FilterTypes
-from inference import EEGInferenceApp
 import matplotlib.pyplot as plt
 
 RC_CAR_CHARACTERISTIC = '19b10000-e8f2-537e-4f6c-d104768a1214'
@@ -23,7 +22,6 @@ class BluetoothCar:
 
         def run_loop():
             asyncio.run(self._coroutine())
-            print("Run loop exited")
         
         self.thread = threading.Thread(target=run_loop)
         self.command = 0
@@ -54,8 +52,6 @@ class BluetoothCar:
                 self.command = 0
 
             await asyncio.sleep(0.3)
-
-        print("Exited")
         
     async def _connect_car(self):
         print("Searching Arduino R4, please wait...")

@@ -31,7 +31,7 @@ class DataProcessor:
         self.beep_interval_ms = 10000
         self.data_capture_length_ms = 3000
         self.state = self.STATE_WAITING_FOR_BEEP
-        self.model = EEGInferenceApp()
+        self.model = EEGInferenceApp("ai/data/checkpoint.pt")
         self.car = BluetoothCar()
         self.car.start()
 
