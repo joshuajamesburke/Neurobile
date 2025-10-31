@@ -26,6 +26,4 @@ This iteration moves the car correspondingly to its user thinking left or right.
 Final Demo: https://youtube.com/shorts/8y0yUy0MFGg?feature=share
 
 
-<img src="https://github.com/joshuajamesburke/Neurobile/blob/main/josh.jpg" width=400/>
-
 
